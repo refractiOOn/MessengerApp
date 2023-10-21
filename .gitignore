@@ -1,0 +1,9 @@
+# Output
+[Bb]uild/
+
+# CLion
+.idea/
+
+# CMake
+CMakeUserPresets.json
+CMakeLists.txt.user
