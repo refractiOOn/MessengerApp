@@ -3,7 +3,7 @@ project(MessengerApp VERSION 1.0 LANGUAGES CXX)
 set(CXX_SOURCE_FILES main.cxx)
 set(QML_SOURCE_FILES Main.qml)
 
-qt_add_executable(${PROJECT_NAME})
+qt_add_executable(${PROJECT_NAME} main.cxx)
 
 qt_add_qml_module(${PROJECT_NAME}
     URI ${PROJECT_NAME}
@@ -23,5 +23,6 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Core
     Qt6::Quick
-    fmt::fmt
+    Boost::boost
+#    fmt::fmt
 )

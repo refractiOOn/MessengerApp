@@ -5,4 +5,4 @@ class MessengerApp(ConanFile):
     version = '1.0'
     settings = 'os', 'compiler', 'build_type', 'arch'
     generators = 'CMakeToolchain', 'CMakeDeps'
-    requires = 'fmt/10.1.1'
+    requires = 'fmt/10.1.1', 'boost/1.82.0'
